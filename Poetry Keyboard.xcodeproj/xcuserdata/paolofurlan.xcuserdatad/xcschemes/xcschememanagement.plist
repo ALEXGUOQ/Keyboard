@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Poetry Keyboard.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>PoetryKey (en).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>PoetryKey (es).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>EA76E8801A2E74C90092F147</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA76E8911A2E75400092F147</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EAA1A2191A2E3637001F9FE6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EAA1A2321A2E3637001F9FE6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EAA1A2461A2E3648001F9FE6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

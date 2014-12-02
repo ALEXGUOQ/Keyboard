@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA76E8871A2E74C90092F147 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA76E8861A2E74C90092F147 /* KeyboardViewController.m */; };
+		EA76E88A1A2E74C90092F147 /* PoetryKey (es).appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EA76E8811A2E74C90092F147 /* PoetryKey (es).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EA76E8981A2E75400092F147 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA76E8971A2E75400092F147 /* KeyboardViewController.m */; };
+		EA76E89B1A2E75400092F147 /* PoetryKey (en).appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EA76E8921A2E75400092F147 /* PoetryKey (en).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EA76E8A51A2E75660092F147 /* changeKeyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = EA76E8A21A2E75660092F147 /* changeKeyboard.png */; };
+		EA76E8A61A2E75660092F147 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = EA76E8A31A2E75660092F147 /* delete.png */; };
+		EA76E8AC1A2E756B0092F147 /* AYUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EA76E8A91A2E756B0092F147 /* AYUIButton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EA76E8AD1A2E756B0092F147 /* changeKeyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = EA76E8AA1A2E756B0092F147 /* changeKeyboard.png */; };
+		EA76E8AE1A2E756B0092F147 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = EA76E8AB1A2E756B0092F147 /* delete.png */; };
+		EA76E8B11A2E7D0C0092F147 /* PoetryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA76E8B01A2E7D0C0092F147 /* PoetryCell.m */; };
+		EA76E8B51A2E7E310092F147 /* AYUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EA76E8B41A2E7E310092F147 /* AYUIButton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EAA1A2201A2E3637001F9FE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA1A21F1A2E3637001F9FE6 /* main.m */; };
+		EAA1A2231A2E3637001F9FE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA1A2221A2E3637001F9FE6 /* AppDelegate.m */; };
+		EAA1A2261A2E3637001F9FE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA1A2251A2E3637001F9FE6 /* ViewController.m */; };
+		EAA1A2291A2E3637001F9FE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA1A2271A2E3637001F9FE6 /* Main.storyboard */; };
+		EAA1A22B1A2E3637001F9FE6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA1A22A1A2E3637001F9FE6 /* Images.xcassets */; };
+		EAA1A22E1A2E3637001F9FE6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA1A22C1A2E3637001F9FE6 /* LaunchScreen.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA76E8881A2E74C90092F147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAA1A2121A2E3637001F9FE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA76E8801A2E74C90092F147;
+			remoteInfo = "PoetryKey (es)";
+		};
+		EA76E8991A2E75400092F147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAA1A2121A2E3637001F9FE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA76E8911A2E75400092F147;
+			remoteInfo = "PoetryKey (en)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EAA1A2541A2E3648001F9FE6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EA76E89B1A2E75400092F147 /* PoetryKey (en).appex in Embed App Extensions */,
+				EA76E88A1A2E74C90092F147 /* PoetryKey (es).appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EA76E8811A2E74C90092F147 /* PoetryKey (es).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PoetryKey (es).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA76E8841A2E74C90092F147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA76E8851A2E74C90092F147 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		EA76E8861A2E74C90092F147 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		EA76E8921A2E75400092F147 /* PoetryKey (en).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PoetryKey (en).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA76E8951A2E75400092F147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA76E8961A2E75400092F147 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		EA76E8971A2E75400092F147 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		EA76E8A21A2E75660092F147 /* changeKeyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = changeKeyboard.png; sourceTree = "<group>"; };
+		EA76E8A31A2E75660092F147 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		EA76E8A81A2E756B0092F147 /* AYUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYUIButton.h; sourceTree = "<group>"; };
+		EA76E8A91A2E756B0092F147 /* AYUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYUIButton.m; sourceTree = "<group>"; };
+		EA76E8AA1A2E756B0092F147 /* changeKeyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = changeKeyboard.png; sourceTree = "<group>"; };
+		EA76E8AB1A2E756B0092F147 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		EA76E8AF1A2E7D0C0092F147 /* PoetryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoetryCell.h; sourceTree = "<group>"; };
+		EA76E8B01A2E7D0C0092F147 /* PoetryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoetryCell.m; sourceTree = "<group>"; };
+		EA76E8B31A2E7E310092F147 /* AYUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYUIButton.h; sourceTree = "<group>"; };
+		EA76E8B41A2E7E310092F147 /* AYUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYUIButton.m; sourceTree = "<group>"; };
+		EAA1A21A1A2E3637001F9FE6 /* Poetry Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poetry Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA1A21E1A2E3637001F9FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAA1A21F1A2E3637001F9FE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAA1A2211A2E3637001F9FE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EAA1A2221A2E3637001F9FE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EAA1A2241A2E3637001F9FE6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EAA1A2251A2E3637001F9FE6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EAA1A2281A2E3637001F9FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAA1A22A1A2E3637001F9FE6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EAA1A22D1A2E3637001F9FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA76E87E1A2E74C90092F147 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA76E88F1A2E75400092F147 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAA1A2171A2E3637001F9FE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA76E8821A2E74C90092F147 /* PoetryKey (es) */ = {
+			isa = PBXGroup;
+			children = (
+				EA76E8A71A2E756B0092F147 /* AYUIButton-master */,
+				EA76E8AA1A2E756B0092F147 /* changeKeyboard.png */,
+				EA76E8AB1A2E756B0092F147 /* delete.png */,
+				EA76E8851A2E74C90092F147 /* KeyboardViewController.h */,
+				EA76E8861A2E74C90092F147 /* KeyboardViewController.m */,
+				EA76E8831A2E74C90092F147 /* Supporting Files */,
+			);
+			path = "PoetryKey (es)";
+			sourceTree = "<group>";
+		};
+		EA76E8831A2E74C90092F147 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA76E8841A2E74C90092F147 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA76E8931A2E75400092F147 /* PoetryKey (en) */ = {
+			isa = PBXGroup;
+			children = (
+				EA76E8A21A2E75660092F147 /* changeKeyboard.png */,
+				EA76E8A31A2E75660092F147 /* delete.png */,
+				EA76E8B21A2E7E310092F147 /* AYUIButton-master */,
+				EA76E8AF1A2E7D0C0092F147 /* PoetryCell.h */,
+				EA76E8B01A2E7D0C0092F147 /* PoetryCell.m */,
+				EA76E8961A2E75400092F147 /* KeyboardViewController.h */,
+				EA76E8971A2E75400092F147 /* KeyboardViewController.m */,
+				EA76E8941A2E75400092F147 /* Supporting Files */,
+			);
+			path = "PoetryKey (en)";
+			sourceTree = "<group>";
+		};
+		EA76E8941A2E75400092F147 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA76E8951A2E75400092F147 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA76E8A71A2E756B0092F147 /* AYUIButton-master */ = {
+			isa = PBXGroup;
+			children = (
+				EA76E8A81A2E756B0092F147 /* AYUIButton.h */,
+				EA76E8A91A2E756B0092F147 /* AYUIButton.m */,
+			);
+			path = "AYUIButton-master";
+			sourceTree = "<group>";
+		};
+		EA76E8B21A2E7E310092F147 /* AYUIButton-master */ = {
+			isa = PBXGroup;
+			children = (
+				EA76E8B31A2E7E310092F147 /* AYUIButton.h */,
+				EA76E8B41A2E7E310092F147 /* AYUIButton.m */,
+			);
+			path = "AYUIButton-master";
+			sourceTree = "<group>";
+		};
+		EAA1A2111A2E3637001F9FE6 = {
+			isa = PBXGroup;
+			children = (
+				EAA1A21C1A2E3637001F9FE6 /* Poetry Keyboard */,
+				EA76E8931A2E75400092F147 /* PoetryKey (en) */,
+				EA76E8821A2E74C90092F147 /* PoetryKey (es) */,
+				EAA1A21B1A2E3637001F9FE6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAA1A21B1A2E3637001F9FE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAA1A21A1A2E3637001F9FE6 /* Poetry Keyboard.app */,
+				EA76E8811A2E74C90092F147 /* PoetryKey (es).appex */,
+				EA76E8921A2E75400092F147 /* PoetryKey (en).appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAA1A21C1A2E3637001F9FE6 /* Poetry Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EAA1A2211A2E3637001F9FE6 /* AppDelegate.h */,
+				EAA1A2221A2E3637001F9FE6 /* AppDelegate.m */,
+				EAA1A2241A2E3637001F9FE6 /* ViewController.h */,
+				EAA1A2251A2E3637001F9FE6 /* ViewController.m */,
+				EAA1A2271A2E3637001F9FE6 /* Main.storyboard */,
+				EAA1A22A1A2E3637001F9FE6 /* Images.xcassets */,
+				EAA1A22C1A2E3637001F9FE6 /* LaunchScreen.xib */,
+				EAA1A21D1A2E3637001F9FE6 /* Supporting Files */,
+			);
+			path = "Poetry Keyboard";
+			sourceTree = "<group>";
+		};
+		EAA1A21D1A2E3637001F9FE6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAA1A21E1A2E3637001F9FE6 /* Info.plist */,
+				EAA1A21F1A2E3637001F9FE6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA76E8801A2E74C90092F147 /* PoetryKey (es) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA76E88B1A2E74C90092F147 /* Build configuration list for PBXNativeTarget "PoetryKey (es)" */;
+			buildPhases = (
+				EA76E87D1A2E74C90092F147 /* Sources */,
+				EA76E87E1A2E74C90092F147 /* Frameworks */,
+				EA76E87F1A2E74C90092F147 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PoetryKey (es)";
+			productName = "PoetryKey (es)";
+			productReference = EA76E8811A2E74C90092F147 /* PoetryKey (es).appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		EA76E8911A2E75400092F147 /* PoetryKey (en) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA76E89C1A2E75400092F147 /* Build configuration list for PBXNativeTarget "PoetryKey (en)" */;
+			buildPhases = (
+				EA76E88E1A2E75400092F147 /* Sources */,
+				EA76E88F1A2E75400092F147 /* Frameworks */,
+				EA76E8901A2E75400092F147 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PoetryKey (en)";
+			productName = "PoetryKey (en)";
+			productReference = EA76E8921A2E75400092F147 /* PoetryKey (en).appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		EAA1A2191A2E3637001F9FE6 /* Poetry Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAA1A23D1A2E3637001F9FE6 /* Build configuration list for PBXNativeTarget "Poetry Keyboard" */;
+			buildPhases = (
+				EAA1A2161A2E3637001F9FE6 /* Sources */,
+				EAA1A2171A2E3637001F9FE6 /* Frameworks */,
+				EAA1A2181A2E3637001F9FE6 /* Resources */,
+				EAA1A2541A2E3648001F9FE6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA76E8891A2E74C90092F147 /* PBXTargetDependency */,
+				EA76E89A1A2E75400092F147 /* PBXTargetDependency */,
+			);
+			name = "Poetry Keyboard";
+			productName = "Poetry Keyboard";
+			productReference = EAA1A21A1A2E3637001F9FE6 /* Poetry Keyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAA1A2121A2E3637001F9FE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Paolo Furlan";
+				TargetAttributes = {
+					EA76E8801A2E74C90092F147 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					EA76E8911A2E75400092F147 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					EAA1A2191A2E3637001F9FE6 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = EAA1A2151A2E3637001F9FE6 /* Build configuration list for PBXProject "Poetry Keyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAA1A2111A2E3637001F9FE6;
+			productRefGroup = EAA1A21B1A2E3637001F9FE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAA1A2191A2E3637001F9FE6 /* Poetry Keyboard */,
+				EA76E8801A2E74C90092F147 /* PoetryKey (es) */,
+				EA76E8911A2E75400092F147 /* PoetryKey (en) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA76E87F1A2E74C90092F147 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA76E8AE1A2E756B0092F147 /* delete.png in Resources */,
+				EA76E8AD1A2E756B0092F147 /* changeKeyboard.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA76E8901A2E75400092F147 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA76E8A61A2E75660092F147 /* delete.png in Resources */,
+				EA76E8A51A2E75660092F147 /* changeKeyboard.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAA1A2181A2E3637001F9FE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA1A2291A2E3637001F9FE6 /* Main.storyboard in Resources */,
+				EAA1A22E1A2E3637001F9FE6 /* LaunchScreen.xib in Resources */,
+				EAA1A22B1A2E3637001F9FE6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA76E87D1A2E74C90092F147 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA76E8871A2E74C90092F147 /* KeyboardViewController.m in Sources */,
+				EA76E8AC1A2E756B0092F147 /* AYUIButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA76E88E1A2E75400092F147 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA76E8B51A2E7E310092F147 /* AYUIButton.m in Sources */,
+				EA76E8981A2E75400092F147 /* KeyboardViewController.m in Sources */,
+				EA76E8B11A2E7D0C0092F147 /* PoetryCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAA1A2161A2E3637001F9FE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA1A2261A2E3637001F9FE6 /* ViewController.m in Sources */,
+				EAA1A2231A2E3637001F9FE6 /* AppDelegate.m in Sources */,
+				EAA1A2201A2E3637001F9FE6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA76E8891A2E74C90092F147 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA76E8801A2E74C90092F147 /* PoetryKey (es) */;
+			targetProxy = EA76E8881A2E74C90092F147 /* PBXContainerItemProxy */;
+		};
+		EA76E89A1A2E75400092F147 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA76E8911A2E75400092F147 /* PoetryKey (en) */;
+			targetProxy = EA76E8991A2E75400092F147 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAA1A2271A2E3637001F9FE6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAA1A2281A2E3637001F9FE6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAA1A22C1A2E3637001F9FE6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAA1A22D1A2E3637001F9FE6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA76E88C1A2E74C90092F147 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PoetryKey (es)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EA76E88D1A2E74C90092F147 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PoetryKey (es)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EA76E89D1A2E75400092F147 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PoetryKey (en)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EA76E89E1A2E75400092F147 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PoetryKey (en)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EAA1A23B1A2E3637001F9FE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EAA1A23C1A2E3637001F9FE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAA1A23E1A2E3637001F9FE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Poetry Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EAA1A23F1A2E3637001F9FE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Poetry Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA76E88B1A2E74C90092F147 /* Build configuration list for PBXNativeTarget "PoetryKey (es)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA76E88C1A2E74C90092F147 /* Debug */,
+				EA76E88D1A2E74C90092F147 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EA76E89C1A2E75400092F147 /* Build configuration list for PBXNativeTarget "PoetryKey (en)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA76E89D1A2E75400092F147 /* Debug */,
+				EA76E89E1A2E75400092F147 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EAA1A2151A2E3637001F9FE6 /* Build configuration list for PBXProject "Poetry Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA1A23B1A2E3637001F9FE6 /* Debug */,
+				EAA1A23C1A2E3637001F9FE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAA1A23D1A2E3637001F9FE6 /* Build configuration list for PBXNativeTarget "Poetry Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA1A23E1A2E3637001F9FE6 /* Debug */,
+				EAA1A23F1A2E3637001F9FE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAA1A2121A2E3637001F9FE6 /* Project object */;
+}

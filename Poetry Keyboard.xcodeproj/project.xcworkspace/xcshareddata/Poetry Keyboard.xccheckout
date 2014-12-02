@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F98F2B0F-D395-4DE0-9A77-44A55D6E5944</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>664C25035C1BB61DD3110FD2D41B4EE7BC321863</key>
+		<string>github.com:goreste/20lines.git</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>664C25035C1BB61DD3110FD2D41B4EE7BC321863</key>
+		<string>20lines/</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:goreste/20lines.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>664C25035C1BB61DD3110FD2D41B4EE7BC321863</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>664C25035C1BB61DD3110FD2D41B4EE7BC321863</string>
+			<key>IDESourceControlWCCName</key>
+			<string>20lines</string>
+		</dict>
+	</array>
+</dict>
+</plist>
