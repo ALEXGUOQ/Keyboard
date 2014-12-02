@@ -10,12 +10,10 @@
 
 #import "AYUIButton.h"
 
-@interface KeyboardViewController () {
+@interface KeyboardViewController () <UITableViewDataSource, UITableViewDelegate> {
     NSTimer *myTimer;
     
     NSArray *arrayPoetry;
-    
-    float yBtn;
 }
 
 @end
@@ -45,8 +43,8 @@
 
 -(void)loadGraphics
 {
-    UIScrollView *scroll=[self scrollViewPoetry];
-    [self.view addSubview:scroll];
+    UITableView *table=[self tableviewPoetry];
+    [self.view addSubview:table];
     
     UIView *vBottom=[self viewBottom];
     [self.view addSubview:vBottom];
@@ -54,67 +52,55 @@
 
 
 #pragma mark - Scrollview
--(UIScrollView *)scrollViewPoetry
+-(UITableView *)tableviewPoetry
 {
-    UIScrollView *s=[[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-49)];
-    s.backgroundColor=[UIColor clearColor];
-    s.showsVerticalScrollIndicator=NO;
-    s.showsHorizontalScrollIndicator=NO;
+    UITableView *t=[[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-49)];
+    t.backgroundColor=[UIColor clearColor];
+    t.showsVerticalScrollIndicator=NO;
+    t.delegate=self;
+    t.dataSource=self;
     
-    yBtn=0;
-    for (int i=0; i<arrayPoetry.count; i++) {
-        AYUIButton *btn=[self buttonPoetry:i];
-        btn.tag=i;
-        [btn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-        [s addSubview:btn];
-        [s setContentSize:CGSizeMake(s.frame.size.width, btn.frame.size.height+btn.frame.origin.y)];
-    }
-    
-    return s;
+    return t;
 }
 
-
--(AYUIButton *)buttonPoetry:(int)index
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    AYUIButton *b=[[AYUIButton alloc] init];
-    [b setBackgroundColor:[UIColor colorWithRed:180.0/255.0 green:180.0/255.0 blue:180.0/255.0 alpha:1.0] forState:UIControlStateNormal];
-    [b setBackgroundColor:[UIColor colorWithRed:130.0/255.0 green:130.0/255.0 blue:130.0/255.0 alpha:1.0] forState:UIControlStateHighlighted];
-    
-    b.contentEdgeInsets=UIEdgeInsetsMake(10, 10, 10, 10);
-    b.contentHorizontalAlignment=UIControlContentHorizontalAlignmentCenter;
-    b.contentVerticalAlignment=UIControlContentVerticalAlignmentCenter;
-    
-    NSAttributedString *attributed = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@", [arrayPoetry objectAtIndex:index]] attributes:@{NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue" size:15], NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    return arrayPoetry.count;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSAttributedString *attributed = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@", [arrayPoetry objectAtIndex:indexPath.row]] attributes:@{NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue" size:15], NSForegroundColorAttributeName:[UIColor whiteColor]}];
     
     CGRect rect = [attributed boundingRectWithSize:CGSizeMake(self.view.frame.size.width, CGFLOAT_MAX)
                                            options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading)
                                            context:nil];
     CGSize size = rect.size;
     
-    [b setAttributedTitle:attributed forState:UIControlStateNormal];
     
-    [b.titleLabel setNumberOfLines:-1];
-    
-    CGRect frame=b.frame;
-    frame.origin.x=0;
-    frame.origin.y=yBtn+1;
-    frame.size.width=self.view.frame.size.width;
-    frame.size.height=size.height+20;
-    b.frame=frame;
-    
-    yBtn=b.frame.origin.y+b.frame.size.height;
-    
-    return b;
+    return size.height+20;
 }
 
-
-#pragma mark - Button pressed
--(void)buttonPressed:(AYUIButton *)btn
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPat
 {
-    int tag=(int)(btn.tag);
+    PoetryCell *cell=(PoetryCell *)[tableView dequeueReusableCellWithIdentifier:@"cell"];
     
-    [self.textDocumentProxy insertText:[NSString stringWithFormat:@"%@", [arrayPoetry objectAtIndex:tag]]];
+    if(!cell){
+        cell=[[PoetryCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""];
+    }
+    
+    [cell setLabel:[NSString stringWithFormat:@"%@", [arrayPoetry objectAtIndex:indexPat.row]] withFrame:CGRectMake(0, 0, self.view.frame.size.width, 0)];
+    
+    return cell;
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.textDocumentProxy insertText:[NSString stringWithFormat:@"%@", [arrayPoetry objectAtIndex:indexPath.row]]];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 
 #pragma mark - Bottom part
 -(UIView *)viewBottom

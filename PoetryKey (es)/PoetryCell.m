@@ -29,7 +29,6 @@
         _lblPoetry.lineBreakMode=NSLineBreakByTruncatingTail;
         [self addSubview:_lblPoetry];
     }
-    
     _lblPoetry.text=text;
     [_lblPoetry sizeToFit];
     
