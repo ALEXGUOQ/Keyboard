@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Paolo Furlan. All rights reserved.
 //
 
-#import "PoetryCell.h"
+#import "PFPoetryCell.h"
 
-@implementation PoetryCell
+@implementation PFPoetryCell
 
 - (void)awakeFromNib {
     // Initialization code

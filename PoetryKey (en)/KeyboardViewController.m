@@ -7,7 +7,7 @@
 //
 
 #import "KeyboardViewController.h"
-#import "PoetryCell.h"
+#import "PFPoetryCell.h"
 #import "AYUIButton.h"
 
 @interface KeyboardViewController () <UITableViewDataSource, UITableViewDelegate> {
@@ -83,10 +83,10 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPat
 {
-    PoetryCell *cell=(PoetryCell *)[tableView dequeueReusableCellWithIdentifier:@"cell"];
+    PFPoetryCell *cell=(PFPoetryCell *)[tableView dequeueReusableCellWithIdentifier:@"cell"];
 
     if(!cell){
-        cell=[[PoetryCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""];
+        cell=[[PFPoetryCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""];
     }
     
     [cell setLabel:[NSString stringWithFormat:@"%@", [arrayPoetry objectAtIndex:indexPat.row]] withFrame:CGRectMake(0, 0, self.view.frame.size.width, 0)];

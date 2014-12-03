@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PoetryCell : UITableViewCell
+@interface PFPoetryCell : UITableViewCell
 
 @property (nonatomic, strong) UILabel *lblPoetry;
 
