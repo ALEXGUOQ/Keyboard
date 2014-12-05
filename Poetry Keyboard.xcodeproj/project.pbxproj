@@ -19,6 +19,7 @@
 		EA76E8B11A2E7D0C0092F147 /* PFPoetryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA76E8B01A2E7D0C0092F147 /* PFPoetryCell.m */; };
 		EA76E8B51A2E7E310092F147 /* AYUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EA76E8B41A2E7E310092F147 /* AYUIButton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EA76E8B81A2E81D50092F147 /* PFPoetryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA76E8B71A2E81D50092F147 /* PFPoetryCell.m */; };
+		EA76E8BB1A322CCA0092F147 /* PoetryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA76E8BA1A322CCA0092F147 /* PoetryCell.m */; };
 		EAA1A2201A2E3637001F9FE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA1A21F1A2E3637001F9FE6 /* main.m */; };
 		EAA1A2231A2E3637001F9FE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA1A2221A2E3637001F9FE6 /* AppDelegate.m */; };
 		EAA1A2261A2E3637001F9FE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA1A2251A2E3637001F9FE6 /* ViewController.m */; };
@@ -80,6 +81,8 @@
 		EA76E8B41A2E7E310092F147 /* AYUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYUIButton.m; sourceTree = "<group>"; };
 		EA76E8B61A2E81D50092F147 /* PFPoetryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFPoetryCell.h; sourceTree = "<group>"; };
 		EA76E8B71A2E81D50092F147 /* PFPoetryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFPoetryCell.m; sourceTree = "<group>"; };
+		EA76E8B91A322CCA0092F147 /* PoetryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoetryCell.h; sourceTree = "<group>"; };
+		EA76E8BA1A322CCA0092F147 /* PoetryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoetryCell.m; sourceTree = "<group>"; };
 		EAA1A21A1A2E3637001F9FE6 /* Poetry Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poetry Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA1A21E1A2E3637001F9FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAA1A21F1A2E3637001F9FE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -208,6 +211,8 @@
 				EAA1A2221A2E3637001F9FE6 /* AppDelegate.m */,
 				EAA1A2241A2E3637001F9FE6 /* ViewController.h */,
 				EAA1A2251A2E3637001F9FE6 /* ViewController.m */,
+				EA76E8B91A322CCA0092F147 /* PoetryCell.h */,
+				EA76E8BA1A322CCA0092F147 /* PoetryCell.m */,
 				EAA1A2271A2E3637001F9FE6 /* Main.storyboard */,
 				EAA1A22A1A2E3637001F9FE6 /* Images.xcassets */,
 				EAA1A22C1A2E3637001F9FE6 /* LaunchScreen.xib */,
@@ -380,6 +385,7 @@
 			files = (
 				EAA1A2261A2E3637001F9FE6 /* ViewController.m in Sources */,
 				EAA1A2231A2E3637001F9FE6 /* AppDelegate.m in Sources */,
+				EA76E8BB1A322CCA0092F147 /* PoetryCell.m in Sources */,
 				EAA1A2201A2E3637001F9FE6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
