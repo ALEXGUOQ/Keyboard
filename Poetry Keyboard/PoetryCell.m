@@ -20,7 +20,7 @@
         self.backgroundColor=[UIColor whiteColor];
         
         _lblNumber=[[UILabel alloc] initWithFrame:CGRectMake(20, self.frame.size.height/2-10, 20, 20)];
-        _lblNumber.backgroundColor=[UIColor colorWithRed:84.0/255.0 green:147.0/255.0 blue:233.0/255.0 alpha:1.0];
+        _lblNumber.backgroundColor=[UIColor colorWithRed:184.0/255.0 green:147.0/255.0 blue:233.0/255.0 alpha:1.0];
         _lblNumber.layer.cornerRadius=10.0;
         _lblNumber.layer.masksToBounds=YES;
         _lblNumber.textColor=[UIColor whiteColor];
